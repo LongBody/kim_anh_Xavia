@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)https://duyphuongg.github.io/?fbclid=IwAR3_cwYBswKOuvZlYAI_OEZA-_-w9IfBZI23ERwvId2WRF3Ae1BGTQGQcik -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ebebeb;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 42%;
+            top: 34%;
+            transform-style: preserve-3d;
+            transform: rotateX(13deg);
+            animation: animate 10s linear infinite;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .minbox {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50px;
+            top: 30px;
+            transform-style: preserve-3d;
+            object-fit: cover;
+        }
+        
+        .minbox li {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: white;
+            animation: animate 2s ease;
+        }
+        
+        .minbox li:nth-child(1) {
+            transform: translateZ(50px);
+            background-image: url("kimanh2.jpg");
+        }
+        
+        .minbox li:nth-child(2) {
+            transform: rotateX(180deg) translateZ(50px);
+            background-image: url("kimanh3.jpg");
+        }
+        
+        .minbox li:nth-child(3) {
+            transform: rotateX(-90deg) translateZ(50px);
+            background-image: url("kimanh4.jpg");
+        }
+        
+        .minbox li:nth-child(4) {
+            transform: rotateX(90deg) translateZ(50px);
+            background-image: url("kimanh5.jpg");
+        }
+        
+        .minbox li:nth-child(5) {
+            transform: rotateY(-90deg) translateZ(50px);
+            background-image: url("kimanh6.jpg");
+        }
+        
+        .minbox li:nth-child(6) {
+            transform: rotateY(90deg) translateZ(50px);
+            background-image: url("kimanh7.jpg");
+        }
+        
+        .maxbox li:nth-child(1) {
+            transform: translateZ(50px);
+        }
+        
+        .maxbox li:nth-child(2) {
+            transform: translateZ(50px);
+        }
+        
+        .maxbox li:nth-child(3) {
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+        
+        .maxbox li:nth-child(4) {
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        
+        .maxbox li:nth-child(5) {
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+        
+        .maxbox li:nth-child(6) {
+            transform: rotateY(90deg) translateZ(50px);
+        }
+        
+        .maxbox {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            top: -20px;
+            transform-style: preserve-3d;
+            object-fit: cover;
+        }
+        
+        .maxbox li {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: .2;
+            background: red;
+            animation: animate 2s ease;
+        }
+        
+        .maxbox li:nth-child(1) {
+            transform: translateZ(100px);
+            background-image: url("kimanh.jpg");
+        }
+        
+        .maxbox li:nth-child(2) {
+            transform: rotateX(180deg) translateZ(100px);
+            background-image: url("kimanhfb.jpg");
+        }
+        
+        .maxbox li:nth-child(3) {
+            transform: rotateX(-90deg) translateZ(100px);
+            background-image: url("kimanhfb1.jpg");
+        }
+        
+        .maxbox li:nth-child(4) {
+            transform: rotateX(90deg) translateZ(100px);
+            background-image: url("xavia.jpg")
+        }
+        
+        .maxbox li:nth-child(5) {
+            transform: rotateY(-90deg) translateZ(100px);
+            background-image: url("xaviae.jpg");
+        }
+        
+        .maxbox li:nth-child(6) {
+            transform: rotateY(90deg) translateZ(100px);
+            background-image: url("kimanh1.jpg");
+        }
+        
+        .box:hover ol li:nth-child(1) {
+            transform: translateZ(300px);
+            width: 400px;
+            height: 400px;
+            opacity: .8;
+            left: -100px;
+            top: -100px;
+        }
+        
+        .box:hover ol li:nth-child(2) {
+            transform: rotateX(180deg) translateZ(300px);
+            width: 400px;
+            height: 400px;
+            opacity: .8;
+            left: -100px;
+            top: -100px;
+        }
+        
+        .box:hover ol li:nth-child(3) {
+            transform: rotateX(-90deg) translateZ(300px);
+            width: 400px;
+            height: 400px;
+            opacity: .8;
+            left: -100px;
+            top: -100px;
+        }
+        
+        .box:hover ol li:nth-child(4) {
+            transform: rotateX(90deg) translateZ(300px);
+            width: 400px;
+            height: 400px;
+            opacity: .8;
+            left: -100px;
+            top: -100px;
+        }
+        
+        .box:hover ol li:nth-child(5) {
+            transform: rotateY(-90deg) translateZ(300px);
+            width: 400px;
+            height: 400px;
+            opacity: .8;
+            left: -100px;
+            top: -100px;
+        }
+        
+        .box:hover ol li:nth-child(6) {
+            transform: rotateY(90deg) translateZ(300px);
+            width: 400px;
+            height: 400px;
+            opacity: .8;
+            left: -100px;
+            top: -100px;
+        }
+        
+        @keyframes animate {
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var context = new AudioContext();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <ul class="minbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ol class="maxbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <audio> <source src="./way_back_home.html" allow="autoplay loop" style="display:none" type="Media Type"></audio>
+
+    <script src="./long.github.io_files/jquery-3.4.1.min.js.download" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script>
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (!isChrome) {
+            $('#iframeAudio').remove()
+        } else {
+            $('#playAudio').remove()
+        }
+    </script>
+
+</body>
+
+</html>
